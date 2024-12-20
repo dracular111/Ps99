@@ -1,7 +1,6 @@
 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("World1Teleport"):InvokeServer()
 ---
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/Del-CoreGui"))()
 task.wait(25)
 --- HOLIDAY EVENT ---
-script_key="EKIprNLsaiqmrgKjSlQUQcixJKGtqumd";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/HOLIDAY"))()
+script_key="XnosTONoXLARibYvTQjEPnvxshblvmDY";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dracular111/Ps99/main/HOLIDAY"))()
