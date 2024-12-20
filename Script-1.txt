@@ -1,0 +1,17 @@
+task.wait(1)
+-- Kiểm tra biến toàn cục để xác định script đã chạy hay chưa
+if _G.SCRIPT1 then
+    warn("Script đã được chạy trước đó!")
+    return -- Dừng script nếu đã chạy
+end
+
+-- Đánh dấu script đã được chạy
+_G.SCRIPT1 = true
+
+-- Script của bạn
+getgenv().Config = {
+    ["EquipEnchants"] = {"Lucky Eggs", "Lucky Eggs", "Lucky Eggs", "Strong Pets", "Coins", "Fortune"},
+    ["UserID"] = "1092353095171833906",
+    ["Webhook"] = "https://discord.com/api/webhooks/1316401365542768650/4YZQwBoNvjF7bcOqwzL5hTrJtnTvA2ozWrVYS7V43cUGLNtbsXyR_eg59Y25aO-3FGGr"
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b883bc159a5f609adb4871db6fc15ea8.lua"))()

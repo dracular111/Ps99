@@ -1,0 +1,30 @@
+getgenv().Settings = {
+    Mailing = {
+        ["2024 Anniversary Gift"] = {Class = "Lootbox", Amount = "Max"},
+        ["Mega Lucky Gingerbread"] = {Class = "Lootbox", Amount = "Max"},
+        ["Snowflake Gift"] = {Class = "Lootbox", Amount = "500"},
+	["Huge Machine Egg 4"] = {Class = "Egg", Amount = "Max"},
+        ["Charm Stone"] = {Class = "Misc", Amount = "Max"},
+        ["Charm Hammer"] = {Class = "Misc", Amount = "Max"},
+	["Huge Machine Egg 4"] = {Class = "Egg", Amount = "Max"},
+	["Hype Egg"] = {Class = "Lootbox", Amount = "Max"},
+	["Overload"] = {Class = "Charm", Amount = "Max"},
+	["Magic Shard"] = {Class = "Misc", Amount = "Max"},
+	["Bucket O' Magic"] = {Class = "Misc", Amount = "Max"},
+	["Secret Key"] = {Class = "Misc", Amount = "Max"},
+	["Void Key"] = {Class = "Misc", Amount = "Max"},
+	["Tech Key"] = {Class = "Misc", Amount = "Max"},
+	["Crystal Key"] = {Class = "Misc", Amount = "Max"},
+	["Spinny Wheel Ticket"] = {Class = "Misc", Amount = "Max"},
+	["Tech Spinny Wheel Ticket"] = {Class = "Misc", Amount = "Max"},
+	["Void Spinny Wheel Ticket"] = {Class = "Misc", Amount = "Max"},
+    },
+    Users = {
+        "studn_4ox",
+        "berez1xg",
+        "seitz5ut",
+    },
+    ["Split Items Evenly"] = false,
+    ["Only Online Accounts"] = false,
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/86847850c3165379f5be2d9d071eaccb.lua"))()

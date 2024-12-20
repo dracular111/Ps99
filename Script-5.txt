@@ -1,0 +1,11 @@
+task.wait(1)
+-- Kiểm tra biến toàn cục để xác định script đã chạy hay chưa
+if _G.SCRIPT5 then
+    warn("Script đã được chạy trước đó!")
+    return -- Dừng script nếu đã chạy
+end
+
+-- Đánh dấu script đã được chạy
+_G.SCRIPT5 = true
+
+-- Script của bạn

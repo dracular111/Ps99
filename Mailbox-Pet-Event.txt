@@ -1,0 +1,24 @@
+getgenv().Settings = {
+    Mailing = {
+	["Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Golden Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Rainbow Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Golden Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Rainbow Icy Phoenix"] = {Class = "Pet", Amount = "Max"},
+	["Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+	["Golden Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+	["Rainbow Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Golden Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+	["Shiny Rainbow Lit Octopus"] = {Class = "Pet", Amount = "Max"},
+    },
+    Users = {
+        "seitz5ut",
+        "",
+        "",
+    },
+    ["Split Items Evenly"] = false,
+    ["Only Online Accounts"] = false,
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/86847850c3165379f5be2d9d071eaccb.lua"))()

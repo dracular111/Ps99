@@ -1,0 +1,18 @@
+task.wait(1)
+-- Kiểm tra biến toàn cục để xác định script đã chạy hay chưa
+if _G.SCRIPT2 then
+    warn("Script đã được chạy trước đó!")
+    return -- Dừng script nếu đã chạy
+end
+
+-- Đánh dấu script đã được chạy
+_G.SCRIPT2 = true
+
+-- Script của bạn
+local args = {
+    [1] = "Ultra Mastery",
+    [2] = 1,
+    [3] = "Pets"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("XPPotions: Consume"):InvokeServer(unpack(args))

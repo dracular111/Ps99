@@ -1,0 +1,60 @@
+task.wait(1)
+-- Kiểm tra biến toàn cục để xác định script đã chạy hay chưa
+if _G.SCRIPT3 then
+    warn("Script đã được chạy trước đó!")
+    return -- Dừng script nếu đã chạy
+end
+
+-- Đánh dấu script đã được chạy
+_G.SCRIPT3 = true
+
+-- Script của bạn
+repeat wait() until game:IsLoaded()
+local VirtualUser = game:service 'VirtualUser'
+game:service('Players').LocalPlayer.Idled:connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+
+repeat
+    wait()
+until game:IsLoaded() and
+    game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui") and
+    game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("MainLeft") and
+    game:GetService("Players").LocalPlayer.PlayerGui.MainLeft.Left.Currency.Diamonds.Diamonds.Visible == true and
+    not game:GetService("Players").LocalPlayer:FindFirstChild("GUIFX Holder")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.__THINGS.Instances.HolidayEvent.Teleports.Enter
+    .CFrame
+task.wait(3)
+local v14 = require(game.ReplicatedStorage.Library.Client.Network);
+
+local rs = game:GetService("ReplicatedStorage")
+local save = require(rs.Library.Client.Save)
+local Items = require(game:GetService("ReplicatedStorage").Library.Items.Types)
+local plr = game.Players.LocalPlayer
+local RAP = 0
+
+local v4 = require(game.ReplicatedStorage.Library.Client.EventUpgradeCmds);
+local v13 = require(game.ReplicatedStorage.Library.Client.FFlags);
+
+local v20 = {
+    "MegaPresentGrowFaster",
+    "MegaPresentMoreLoot",
+    "MegaPresentHigherHugeChance",
+    "MegaPresentHigherTitanicChance",
+    "MegaPresentEggLuckBoost"
+};
+spawn(function()
+    while wait() do
+        for i, v in save.Get().Inventory.Misc do
+            if v.id == "Snowflake" and v._am and v._am >= 10 then
+                local v52, v53 = v14.Invoke("SnowMachine_Activate", v._am);
+            end
+        end
+        for i, v in v20 do
+            if v4.GetTier(v) < 4 then
+                local v31, v32 = v4.Purchase(v);
+            end
+        end
+    end
+end)

@@ -1,0 +1,13 @@
+local UsedVoucherAmount = require(game.ReplicatedStorage.Library.Client.Save).Get().DaycareVouchers
+
+local Network = require(game.ReplicatedStorage.Library.Client.Network)
+if UsedVoucherAmount < 20 then
+    print("Using Daycare Vouchers")
+    for i = 1, 20 - UsedVoucherAmount do
+        repeat
+            task.wait()
+        until Network.Invoke("DaycareSlotVoucher_Consume")
+    end
+end
+task.wait(5)
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f420cbd8fa65c531f13fd0d569bc3300.lua"))()
