@@ -1,11 +1,11 @@
 --- Gửi Tất Cả Huge ---
---loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/Mailbox-Huge"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/dracular111/Ps99/main/Mailbox-Huge"))()
 
 --- Gửi Tất Cả Pet Event ---
---loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/Mailbox-Pet-Event"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/dracular111/Ps99/main/Mailbox-Pet-Event"))()
 
 --- Gửi Items ---
---loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/Mailbox-Items"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/dracular111/Ps99/main/Mailbox-Items"))()
 
 --- Gửi Tất Cả Gems ---
---loadstring(game:HttpGet("https://raw.githubusercontent.com/dinhtuanp654/pet99/main/Mailbox-Gems"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/dracular111/Ps99/main/Mailbox-Gems"))()
